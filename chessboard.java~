@@ -227,7 +227,7 @@ public class chessboard implements boardtype
 	public movetype[] generate_moves(int player)
 	{
 		//Vector v=new Vector(30);
-		chessmovetype[] cmoves=new chessmovetype[130];
+		chessmovetype[] cmoves=new chessmovetype[80];
 		int cm=0;
 		int piece;
 		boolean flaga;
