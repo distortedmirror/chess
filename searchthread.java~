@@ -12,7 +12,6 @@ public class searchthread extends Thread
   protected int resultscore;
   protected boardtype board;
   protected movetype searchmoves[];
-    protected int searchscores[];
   protected minimax dmaker;
 
   protected searchthread(boardtype board, minimax dm)
@@ -20,11 +19,7 @@ public class searchthread extends Thread
     ply=1;// this is set to 1 because DecisionMaker handles 0
     player=-1;
     searchmoves=new movetype[SEARCHPLY];
-    searchscores= new int[SEARCHPLY];
-    for(int i=0;i<SEARCHPLY;++i){
-	searchscores[i]=9999;
-    }
-    dmaker=dm;
+	dmaker=dm;
     this.board=board;
   }
 
@@ -48,7 +43,6 @@ public class searchthread extends Thread
     if(ply<SEARCHPLY)
     {
 	moves=board.generate_moves(player);
-	searchscores[ply-1]=9999;
 	for(int ct=0;ct<moves.length;ct++)
 	  {
 	    board.make_move(moves[ct]);
@@ -68,7 +62,6 @@ public class searchthread extends Thread
 		  {
 		    highscore=score;
 		    searchmoves[ply-1]=moves[ct];
-		    searchscores[ply-1]=highscore;
 		  }
 	    }
 	    else
@@ -78,10 +71,6 @@ public class searchthread extends Thread
 		    highscore=score;
 		    searchmoves[ply-1]=moves[ct];
 		  }
-		if(highscore<searchscores[ply-2] && searchscores[ply-2]!=9999){
-		     board.unmake_move(moves[ct]);
-		     break;
-		}
 	    }
 	    board.unmake_move(moves[ct]);
 	  }
