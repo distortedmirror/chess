@@ -18,6 +18,6 @@ Thanks for checking it out!
 
 -Mark Brito-
 
-![chess.java](chessscreenshot.jpg)
-![chess.java](tictactoescreenshot.jpg)
-![chess.java](checkersscreenshot.jpg)
+![chess](chessscreenshot.jpg)
+![tictactoe](tictactoescreenshot.jpg)
+![checkers](checkersscreenshot.jpg)
