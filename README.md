@@ -6,7 +6,7 @@ Running the games:
 Legacy:<br/>
 $ appletviewer https://distortedmirror.github.io/chess/chess.html 
 <br/><br/>
-From appletviewer jdk 8:<br/><br/>
+From appletviewer jdk 8: (you may need to add "permission java.security.AllPermission;" to client.policy.<br/><br/>
 $ java sun.applet.AppletViewer https://distortedmirror.github.io/chess/chess.html 
 <br/><br/><br/>
 As a downloaded application for jdk 9 and greater:
