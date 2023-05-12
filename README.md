@@ -10,7 +10,7 @@ First clone the repository:
 <br/>
 $ git clone https://github.com/distortedmirror/chess.git
 <br/>
-then go to the directory and run the apps.
+$ echo then go to the directory and run the apps.
 <br/>
 $ cd chess<br/>
 $ java chess  # for chess<br/>
