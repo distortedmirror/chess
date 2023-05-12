@@ -9,7 +9,7 @@ $ appletviewer https://distortedmirror.github.io/chess/chess.html
 From appletviewer jdk 8:<br/><br/>
 $ java sun.applet.AppletViewer https://distortedmirror.github.io/chess/chess.html 
 <br/><br/><br/>
-As a downloaded application:
+As a downloaded application for jdk 9 and greater:
 First clone the repository:
 <br/>
 $ git clone https://github.com/distortedmirror/chess.git
