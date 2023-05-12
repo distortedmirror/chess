@@ -4,7 +4,7 @@ Java chess program by Mark Duane Brito (mark.brito@gmail.com) with GUI that demo
 Running the games:
 From appletviewer:<br/><br/>
 $ java sun.applet.AppletViewer https://distortedmirror.github.io/chess/chess.html 
-<br/>
+<br/><br/><br/>
 As a downloaded application:
 First clone the repository:
 <br/>
